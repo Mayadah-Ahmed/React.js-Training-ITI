@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatSphere AI</title>
+  </head>
+  <body>
+    <div id="app" class="vh-100 d-flex flex-column bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+          <div class="d-flex align-items-center">
+            <i class="bi bi-cpu-fill fs-3 text-primary me-2"></i>
+            <div>
+              <div class="fw-bold">ChatSphere AI</div>
+              <small class="text-muted">Your intelligent AI assistant</small>
+            </div>
+          </div>
+          <div class="ms-auto d-flex align-items-center">
+            <span id="statusIndicator" class="badge bg-success me-2">Online</span>
+          </div>
+        </div>
+      </nav>
+
+      <main class="flex-grow-1 d-flex align-items-center justify-content-center p-3">
+        <div class="container" style="max-width:950px;">
+          <div class="card shadow rounded-4" id="chatCard">
+            <div class="card-header bg-white d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center">
+                <div class="avatar me-3">
+                  <img src="https://via.placeholder.com/48/0d6efd/ffffff?text=AI" alt="AI" class="rounded-circle" />
+                </div>
+                <div>
+                  <div class="fw-bold">ChatSphere Assistant</div>
+                
+                </div>
+              </div>
+              <div>
+                <button id="clearBtn" class="btn btn-outline-secondary btn-sm">Clear Chat</button>
+              </div>
+            </div>
+
+            <div class="card-body d-flex flex-column" style="min-height:520px;">
+              <div id="welcomeScreen" class="text-center my-5">
+                <h4>Hi! I'm ChatSphere AI 👋</h4>
+                <p class="text-muted">Ask me anything and I'll do my best to help.</p>
+                <div class="d-flex justify-content-center gap-2">
+                  <button class="btn btn-outline-primary example-btn">Explain a concept</button>
+                  <button class="btn btn-outline-primary example-btn">Help me write something</button>
+                  <button class="btn btn-outline-primary example-btn">Give me an idea</button>
+                </div>
+              </div>
+
+              <div id="messages" class="overflow-auto mb-3 px-2" style="flex:1 1 auto;"></div>
+
+              <div class="mt-2">
+                <div class="input-group">
+                  <textarea id="input" class="form-control" rows="2" placeholder="Type a message... (Shift+Enter for newline)"></textarea>
+                  <button id="sendBtn" class="btn btn-primary" type="button">
+                    <i class="bi bi-send-fill"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      </main>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

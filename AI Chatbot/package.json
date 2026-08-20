@@ -1,0 +1,25 @@
+{
+  "name": "chatsphere-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ChatSphere AI - student demo using Hugging Face Inference SDK",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@huggingface/inference": "^4.13.26",
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.3"
+  },
+  "devDependencies": {
+    "vite": "^8.2.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
